@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="encriptador.css">
+</head>
+<body>
+    <nav class="nav">
+        <h1 title="nav__title">¡Encripta tus mensajes!</h1>
+        <p class="links">
+        <a href="https://github.com/Danius98" class="enlaces">Github</a>
+        <a href="https://www.linkedin.com/in/luis-daniel-arciniegas-barco-942621212/" class="enlaces">Linkedin</a>
+        <a href="#contacto" class="enlaces">Portafolio</a>
+        </p>
+        
+    </nav>
+    <form action="javascript:void(0)"class="encriptador">
+        <div class="encriptador__mensaje">
+            <textarea class="encriptador__texto" type="text" id="normal" placeholder="Ingrese su frase sin codificar"></textarea>
+            <div class="encriptador__botones">
+                <button type="button" class="encriptador--botones" id="copiar__normal" onclick="copiaNormal()">Copiar</button>
+                <button type="button" class="encriptador--botones" id="encriptar" onclick="crypt()">Encripte</button>
+            </div>
+        </div>
+        <div class="encriptador__mensaje">
+            <textarea class="encriptador__texto" type="text" id="encriptado" placeholder="Ingrese su frase codificada"></textarea>
+            <div class="encriptador__botones">
+                <button type="button" class="encriptador--botones" id="copiar__encriptado" onclick="copiaEncriptado()">Copiar</button>
+                <button type="button" class="encriptador--botones" id= "desencriptar" onclick="dencrypt()">Desencripte</button>
+            </div>
+        </div> 
+    </form>
+    <script src="encriptador.js"></script>
+</body>
+</html>
